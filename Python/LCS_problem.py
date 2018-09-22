@@ -37,7 +37,6 @@ for line in INFILE:
     print "You input the sequence: ", line.rstrip()
     SeqLength = len(line.rstrip())
 
-
 DNA = "".join(DNA)
 print "Your joined DNA is: ", DNA
 DNAlength = len(DNA)
@@ -91,8 +90,6 @@ OUTFILE.write (listP + "- P = 0 \n\n")
 # the following lines will now generate the inequalities to ensure that
 # each nucleotide is paired to at most one nucleotide
 
-# CHECK THIS! done. 2:35pm
-# taken straight from fourth-rnaf.py; changed indexes in order to fit model.
 for i in range(1,global_range):
 
     inequality = ""
@@ -110,7 +107,6 @@ for i in range(1,global_range):
     OUTFILE.write ("\n\n")
 
 # Now we want to ensure that the lines do not cross in our model.
-# CHECK THIS. done. 4:55pm
 for h in range(1, local_range-1):
     for i in range(h+1, local_range):
         for j in range(local_range, global_range - 1):
