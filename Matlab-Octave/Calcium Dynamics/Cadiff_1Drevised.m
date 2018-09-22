@@ -3,8 +3,6 @@
 format long e
 plot_num = 0;
 
-
-
 %% initialization of variables
 a = 10000; % number of atoms, will become +1 due to uniform spacing.
 B = 100; % Boundary
@@ -15,8 +13,6 @@ a = length(x);
 c = zeros(a,1);
 c(1:end) = NaN;
 x = round(x);
-
-
 
 %% Begin Probability function to evaluate the probability function to see if a firing occurs or not
 Pmax = 0.3; %maximum probability
@@ -30,8 +26,6 @@ fprob = @(n_ions) Pmin+Pmax*n_ions.^hillcoeff./(n_ions.^hillcoeff+Phalf.^hillcoe
 % Deterministic Probability Function
 %fprob = @(n_ions) 1*(n_ions>5); 
 
-
-
 %% Determining number of openings from SR to Cytosol, and positions of CRUs
 nopen = 20; % not including 0; 
 div = (2*B)/nopen; % divisor
@@ -39,8 +33,6 @@ div = (2*B)/nopen; % divisor
 cru = zeros((nopen+1),1); % to be number of openings + location at 0.
 len = length(cru);
 cru(1:end) = -B:div:B;
-
-
 
 %% initialization of states
 % 0 = closed; 1 = open; -1 = inactive. REFER to Markov Model
@@ -53,8 +45,6 @@ t_open(1) = 1;
 
 tau_open = 50; % time constant for how long open state will be
 tau_inactive = 200; % time constant for how long inactive state will be
-
-
 
 %% main algorithm
 for i = 1:N
@@ -100,7 +90,6 @@ for i = 1:N
     cw = randi([-1 1], cl,1);
     c = c+cw;
 
-    
     % boundary conditions
     x(x<-B) = -B + abs(-B-x(x<-B));
     x(x>B) = B - abs(x(x>B)-B);
@@ -129,7 +118,6 @@ for i = 1:N
     % uptake < 0.01 for 1% uptake, should see calcium waves
     % uptake < 0.1 for 10% uptake, should mimic an Over Active SERCA pump
     % uptake = 0 for 0% uptake, should see a deterministic wave because there is no uptake.
-
 
     for k = 1:a
         
@@ -180,6 +168,4 @@ for i = 1:N
         saveas(f,f_name,'png');
         close(f);
     end
-    
 end
-
