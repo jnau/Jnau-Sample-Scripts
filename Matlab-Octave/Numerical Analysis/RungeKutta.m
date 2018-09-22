@@ -1,6 +1,5 @@
 function R = rungekutta(x0,y0,a,b, h)
 
-
     %define functions
     fx = @(t,x,y) -1000*x + y;
     fy = @(t,x,y) -1/10*y;
@@ -34,9 +33,8 @@ function R = rungekutta(x0,y0,a,b, h)
         
     end
     
-figure
-plot(t,y);
-R = y;
-
+    figure
+    plot(t,y);
+    R = y;
 
 end
