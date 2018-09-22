@@ -1,6 +1,3 @@
-
-
-
 function C = finelement(N, x, p,q,f)
 
     h = zeros(N,1);
@@ -77,6 +74,5 @@ function C = finelement(N, x, p,q,f)
     end
     
     C = c;
-
 
 end
