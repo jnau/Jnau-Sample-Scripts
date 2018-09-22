@@ -1,10 +1,9 @@
 #!/usr/bin/perl
 
 # Lab 3 Exercise 3. 
-# We will be creating a toy blast program called perlBlastFinal.pl
+# We will be creating a toy blast program
 # We will be finding seed words (k-mers) first and then extending them to find potential
-# alignments. We will be using the given kmer.txt files: kmer_v123.txt and kmerfirst.txt
-# as well as kmer4.pl as references.  
+# alignments. 
 
 # Enter Sfile
 print "Enter Database Filename (S): ";
