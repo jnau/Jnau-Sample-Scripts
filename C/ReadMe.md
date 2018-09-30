@@ -2,10 +2,6 @@
 
 This folder organizes my scripts based on the topic they were scripted for.
 
-## Calcium Dynamics
-
-These are any C/C++ scripts that were used in my Calcium Dynamics research. 
-
 ## Data Structure and Algorithm
 
 These scripts were all written as part of lab assignments in a computer science course. The course title was Data Abstraction and Structures- where we were tasked with implementing containers and data structures and specific algorithms using those container and structures. Containers/structures includes doubly linked lists, stacks, queues, hash tables, binary trees, and graphs. Algorithms include searching, sorting, traversal, and Dijkstra's algorithm.
