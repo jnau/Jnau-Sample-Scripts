@@ -1,4 +1,4 @@
-# Sample
+# Sample Scripts
 This repository contains some examples of my current and past projects. These come from past coursework, research, and personal projects. Here, I have organized my scripts into the programming languages that they were originally written in, along with any relevant text files, and results. 
 
 ## C/C++
