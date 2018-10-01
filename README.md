@@ -12,7 +12,3 @@ Contains scripts regarding Numerical Analysis algorithms- ODE/PDE approximations
 
 ## Perl
 Contains scripts from Bioinformatics course (ECS 124) taken at UC Davis, 2017. 
-
-## Other - R/Bash
-This is currently under construction. Will contain anything related to R or Bash. 
-
