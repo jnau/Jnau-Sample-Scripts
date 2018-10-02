@@ -5,8 +5,8 @@ This folder organizes the scripts according to the projects they were written fo
 ## Other
 These are any python scripts written for courses taken at UC Davis, and for fun.
 
-# RaspberryPi3
-This folder contains the script we used to model the Fitzhugh-Nagumo model in order to synchronize our mechanial fireflies
+# Mechanical Firefly
+This folder contains the scripts we used to model the Fitzhugh-Nagumo/Hogkin-Huxley models in order to synchronize our mechanial fireflies
 using the Raspberry Pi 3. 
 
 # LCS_problem.py
