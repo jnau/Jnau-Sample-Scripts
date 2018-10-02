@@ -3,7 +3,7 @@
 This folder organizes the scripts according to the projects they were written for. 
 
 ## Other
-These are any python scripts written for courses taken at UC Davis, and for fun.
+These are any python scripts written for courses taken at UC Davis
 
 ## Mechanical Firefly
 This folder contains the scripts we used to model the Fitzhugh-Nagumo/Hogkin-Huxley models in order to synchronize our mechanial fireflies
